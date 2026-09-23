@@ -1255,7 +1255,6 @@ do
 
     local ThemeRefs = { bg={}, titlebar={}, contentBg={}, tab={}, text={}, subtext={} }
     local function reg(el, role) table.insert(ThemeRefs[role], el) end
-
     local splash = new("Frame",{Name="Splash",Size=UDim2.new(0,420,0,2),Position=UDim2.new(0.5,-210,0.5,-1),BackgroundColor3=C.splash,BorderSizePixel=0,ZIndex=50,Parent=gui})
     corner(splash, 12)
     new("UIStroke",{Color=Color3.fromRGB(70,52,43),Thickness=1.5,Parent=splash})
@@ -1274,7 +1273,7 @@ do
     reg(main, "bg")
     local titleBar = new("Frame",{Size=UDim2.new(1,0,0,44),BackgroundColor3=C.titlebar,BorderSizePixel=0,Parent=main})
     corner(titleBar, 14)
-    local titleLabel = new("TextLabel",{Size=UDim2.new(0,400,1,0),Position=UDim2.new(0,18,0,0),BackgroundTransparency=1,Text="🇰🇿 KZ Hub  |  by Demchenko11, K1s1k and Hehedio2  |  v8.9",TextColor3=C.text,Font=Enum.Font.GothamBold,TextSize=13,TextXAlignment=Enum.TextXAlignment.Left,Parent=titleBar})
+    local titleLabel = new("TextLabel",{Size=UDim2.new(0,400,1,0),Position=UDim2.new(0,18,0,0),BackgroundTransparency=1,Text="🇰🇿 KZ Hub  |  by Demchenko11, K1s1k and Hehedio2  |  v0.8",TextColor3=C.text,Font=Enum.Font.GothamBold,TextSize=13,TextXAlignment=Enum.TextXAlignment.Left,Parent=titleBar})
     reg(titleBar, "titlebar"); reg(titleLabel, "text")
     local iconsFrame = new("Frame",{Size=UDim2.new(0,130,1,0),Position=UDim2.new(1,-130,0,0),BackgroundTransparency=1,Parent=titleBar})
 
